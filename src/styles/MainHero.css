@@ -1,0 +1,33 @@
+.Main-container {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+    background-color: aqua;
+    padding: 0px 100px 0px 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sub-container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    width: 90%;
+    background-color: rosybrown;
+}
+
+.Presentation-container {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.Computer-icon {
+    background-color: red;
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
