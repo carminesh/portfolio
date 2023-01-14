@@ -1,14 +1,11 @@
-import React from 'react';
+import Header from '../layouts/Header';
+import MainHero from '../layouts/MainHero';
 
 function App() {
     return (
-        <div className="App">
-            <header className="App-header">
-                <p className="text-3xl font-bold underline text-blue-500">Edit and save to reload.</p>
-                <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-                    Learn React
-                </a>
-            </header>
+        <div className="bg-black">
+            <Header />
+            <MainHero />
         </div>
     );
 }
