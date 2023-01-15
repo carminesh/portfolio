@@ -3,7 +3,7 @@ import ShowcaseItem from '../components/ShowcaseItem';
 import { ExplainingModel } from '../models/ExplainingModel';
 
 const Education: React.FC = () => {
-    const [experienceData, setExperienceData] = useState<ExplainingModel[]>([
+    const [educationData, setEducationData] = useState<ExplainingModel[]>([
         {
             date: '2019.09 - 2022.09 (3 years)',
             title: 'University of Salerno',
@@ -17,16 +17,16 @@ const Education: React.FC = () => {
         },
     ]);
 
-    const renderExperienceItems = useMemo(() => {
-        return experienceData.map((item: ExplainingModel) => {
+    const renderEducationItems = useMemo(() => {
+        return educationData.map((item: ExplainingModel) => {
             return <ShowcaseItem item={item} />;
         });
-    }, [experienceData]);
+    }, [educationData]);
 
     return (
         <div className="w-auto h-auto bg-slate-50 py-14 pl-6 pr-4 lg:px-28">
             <h1 className="text-4xl font-medium">Education</h1>
-            {renderExperienceItems}
+            {renderEducationItems}
         </div>
     );
 };
