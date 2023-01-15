@@ -1,13 +1,17 @@
+import Education from '../layouts/Education';
+import Experience from '../layouts/Experience';
 import Header from '../layouts/Header';
 import MainHero from '../layouts/MainHero';
 
-function App() {
+const App: React.FC = () => {
     return (
-        <div className="bg-black">
+        <div className="h-auto">
             <Header />
             <MainHero />
+            <Education />
+            <Experience />
         </div>
     );
-}
+};
 
 export default App;
