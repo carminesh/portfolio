@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 interface StoryLineProps {
     innerCircleColor?: string;
@@ -17,4 +17,4 @@ const StoryLine: React.FC<StoryLineProps> = ({ innerCircleColor, enablePing }) =
     );
 };
 
-export default StoryLine;
+export default memo(StoryLine);
