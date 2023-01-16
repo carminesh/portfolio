@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react';
+import LineConnector from '../components/LineConnector';
 import ShowcaseItem from '../components/ShowcaseItem';
 import { ExplainingModel } from '../models/ExplainingModel';
 
