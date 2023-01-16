@@ -4,9 +4,9 @@ import themeIcon from '../assets/themeIcon.svg';
 
 const Header: React.FC = () => {
     return (
-        <nav className="flex flex-row justify-between bg-slate-50 h-28 w-screen px-12 py-10">
-            <img src={logo} alt={'button icon'} className="icon" />
-            <img src={themeIcon} alt={'button icon'} className="icon" />
+        <nav className="flex flex-row justify-between items-center bg-slate-50 h-24 py-3 px-6 w-screen ">
+            <img src={logo} alt={'button icon'} className="w-16 h-16 object-contain" />
+            <img src={themeIcon} alt={'switch theme icon'} className="w-8 h-8 object-contain" />
         </nav>
     );
 };
