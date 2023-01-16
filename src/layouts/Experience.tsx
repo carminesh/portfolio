@@ -1,5 +1,7 @@
 import React, { useMemo, useState } from 'react';
+import LineConnector from '../components/LineConnector';
 import ShowcaseItem from '../components/ShowcaseItem';
+import StoryLine from '../components/StoryLine';
 import { ExplainingModel } from '../models/ExplainingModel';
 
 const Experience: React.FC = () => {
@@ -21,14 +23,20 @@ const Experience: React.FC = () => {
     ]);
 
     const renderExperienceItems = useMemo(() => {
-        return experienceData.map((item: ExplainingModel) => {
-            return <ShowcaseItem item={item} />;
+        return experienceData.map((item: ExplainingModel, index: number) => {
+            return (
+                <div className="flex flex-row self-start pr-4">
+                    <StoryLine innerCircleColor={index === 0 ? '#FFF557' : ''} enablePing={index === 0 ? true : false} />
+                    <ShowcaseItem item={item} />
+                </div>
+            );
         });
     }, [experienceData]);
 
     return (
-        <div className="w-auto h-auto bg-slate-50 py-14 pl-6 pr-4 lg:px-28">
-            <h1 className="text-4xl font-medium">Experience</h1>
+        <div className="w-auto h-auto bg-slate-50 pb-20 pl-6 pr-4 lg:px-28">
+            <h1 className="text-4xl font-medium mb-10">Experience</h1>
+            <LineConnector />
             {renderExperienceItems}
         </div>
     );
