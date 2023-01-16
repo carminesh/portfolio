@@ -10,7 +10,8 @@ module.exports = {
         'purple-gradient-2': '#858CFF',
         'light-purple': '#E7DBFF',
         'light-yellow': '#FFF88F',
-        'light-gray': '#585858'
+        'light-gray': '#585858',
+        'gray-back': '#DDDDDD',
       },
 
     },
