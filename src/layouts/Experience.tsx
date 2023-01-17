@@ -25,7 +25,7 @@ const Experience: React.FC = () => {
     const renderExperienceItems = useMemo(() => {
         return experienceData.map((item: ExplainingModel, index: number) => {
             return (
-                <div className="flex flex-row self-start pr-4">
+                <div className="flex flex-row self-start pr-4 dark:text-theme-font-secondary">
                     <StoryLine innerCircleColor={index === 0 ? '#FFF557' : ''} enablePing={index === 0 ? true : false} />
                     <ShowcaseItem item={item} />
                 </div>
@@ -34,8 +34,8 @@ const Experience: React.FC = () => {
     }, [experienceData]);
 
     return (
-        <div className="w-auto h-auto bg-slate-50 pb-20 pl-6 pr-4 lg:px-28">
-            <h1 className="text-4xl font-medium mb-10">Experience</h1>
+        <div className="w-auto h-auto bg-slate-50 pb-20 pl-6 pr-4 lg:px-28 dark:bg-theme-dark-bg">
+            <h1 className="text-4xl font-medium mb-10 dark:text-theme-font-secondary">Experience</h1>
             <LineConnector />
             {renderExperienceItems}
         </div>

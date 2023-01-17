@@ -12,11 +12,11 @@ const MainHero: React.FC = () => {
     }, []);
 
     return (
-        <div className="bg-slate-50 w-auto h-auto flex-row items-center pl-6 pr-10 pt-10 md:flex md:pb-40 lg:px-28">
+        <div className="bg-slate-50 w-auto h-auto flex-row items-center pl-6 pr-10 pt-10 md:flex md:pb-40 lg:px-28 dark:bg-theme-dark-bg">
             <section className="flex-1 h-auto flex-col phone:px-4">
-                <h2 className="text-4xl sm:text-5xl font-normal text-black mb-2">Hi There,</h2>
+                <h2 className="text-4xl sm:text-5xl font-normal text-black mb-2 dark:text-theme-font-secondary">Hi There,</h2>
                 <h1 className="text-5xl sm:text-7xl font-medium mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-gradient-1 to-purple-gradient-2">I'm Carmine</h1>
-                <p className="text-l sm:text-xl font-normal text-light-gray phone:text-base">
+                <p className="text-l sm:text-xl font-normal text-light-gray phone:text-base dark:text-theme-font-secondary">
                     A computer science graduate. <br></br>Skilled in both individual and team environments and constantly seeking out new opportunities to learn and grow. <br></br>Committed to
                     delivering results and making a positive impact.
                 </p>
@@ -34,10 +34,10 @@ const MainHero: React.FC = () => {
 
                 <div className="flex flex-rowitems-center mt-5">
                     <a href="https://www.linkedin.com/in/carmine-fabbri-0a1b24181/">
-                        <FontAwesomeIcon icon={faLinkedin} size="3x" className="text-black hover:text-purple-gradient-1" />
+                        <FontAwesomeIcon icon={faLinkedin} size="3x" className="text-black hover:text-purple-gradient-1 dark:text-theme-font-secondary" />
                     </a>
                     <a href="https://github.com/carminesh">
-                        <FontAwesomeIcon icon={faSquareGithub} size="3x" style={{ marginLeft: 10 }} className="text-black hover:text-purple-gradient-1" />
+                        <FontAwesomeIcon icon={faSquareGithub} size="3x" style={{ marginLeft: 10 }} className="text-black hover:text-purple-gradient-1 dark:text-theme-font-secondary" />
                     </a>
                 </div>
             </section>

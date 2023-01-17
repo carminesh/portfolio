@@ -25,8 +25,8 @@ const Education: React.FC = () => {
     }, [educationData]);
 
     return (
-        <div className="w-auto h-auto bg-slate-50 py-14 pl-6 pr-4 lg:px-28">
-            <h1 className="text-4xl font-medium">Education</h1>
+        <div className="w-auto h-auto bg-slate-50 py-14 pl-6 pr-4 lg:px-28 dark:bg-theme-dark-bg dark:text-theme-font-secondary">
+            <h1 className="text-4xl font-medium dark:text-theme-font-secondary">Education</h1>
             {renderEducationItems}
         </div>
     );

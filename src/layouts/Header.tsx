@@ -1,12 +1,20 @@
-import React from 'react';
-import logo from '../assets/logo.svg';
-import themeIcon from '../assets/themeIcon.svg';
+import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { switchTheme, getSelectedTheme } from '../store/slices/ThemeSlice';
+import { useEffect } from 'react';
+import PersonalLogo from '../assets/PersonalLogo';
+import ThemeIcon from '../assets/ThemeIcon';
 
 const Header: React.FC = () => {
+    const dispatch = useDispatch();
+    const isDarkModeEnabled: boolean = useSelector(getSelectedTheme);
+
     return (
-        <nav className="flex flex-row justify-between items-center bg-slate-50 h-24 py-3 px-6 w-screen ">
-            <img src={logo} alt={'button icon'} className="w-16 h-16 object-contain" />
-            <img src={themeIcon} alt={'switch theme icon'} className="w-8 h-8 object-contain" />
+        <nav className="flex flex-row justify-between items-center bg-slate-50 h-24 py-3 px-8 w-screen dark:bg-theme-dark-bg lg:px-20">
+            <PersonalLogo fill={isDarkModeEnabled ? '#f8fafc' : '#181818'} width={'55'} height={'35'} />
+            <button onClick={() => dispatch(switchTheme(!isDarkModeEnabled))}>
+                <ThemeIcon fill={isDarkModeEnabled ? '#f8fafc' : '#181818'} width={'28'} height={'28'} />
+            </button>
         </nav>
     );
 };
