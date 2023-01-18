@@ -34,8 +34,8 @@ const Experience: React.FC = () => {
     }, [experienceData]);
 
     return (
-        <div className="w-auto h-auto bg-slate-50 pb-20 pl-6 pr-4 lg:px-28 dark:bg-theme-dark-bg">
-            <h1 className="text-4xl font-medium mb-10 dark:text-theme-font-secondary">Experience</h1>
+        <div className="w-auto h-auto bg-slate-50 pb-20 pl-6 pr-4 dark:bg-theme-dark-bg">
+            <h1 className="text-[40px] font-medium mb-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-gradient-1 to-purple-gradient-2">Experience</h1>
             <LineConnector />
             {renderExperienceItems}
         </div>
