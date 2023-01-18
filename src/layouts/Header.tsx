@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { switchTheme, getSelectedTheme } from '../store/slices/ThemeSlice';
-import { useEffect } from 'react';
 import PersonalLogo from '../assets/PersonalLogo';
 import ThemeIcon from '../assets/ThemeIcon';
 
