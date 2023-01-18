@@ -31,21 +31,26 @@ const Footer: React.FC = () => {
 
                     <div className="flex flex-row items-center pt-4 md:pt-0">
                         <a href="https://www.linkedin.com/in/carmine-fabbri-0a1b24181/">
-                            <FontAwesomeIcon icon={faLinkedin} size="3x" className="text-black hover:text-purple-gradient-1 dark:text-theme-font-secondary" />
+                            <FontAwesomeIcon icon={faLinkedin} size="3x" className="text-black hover:text-purple-gradient-1 dark:text-theme-font-secondary dark:hover:text-purple-gradient-1" />
                         </a>
                         <a href="https://github.com/carminesh">
-                            <FontAwesomeIcon icon={faSquareGithub} size="3x" style={{ marginLeft: 10 }} className="text-black hover:text-purple-gradient-1 dark:text-theme-font-secondary" />
+                            <FontAwesomeIcon
+                                icon={faSquareGithub}
+                                size="3x"
+                                style={{ marginLeft: 10 }}
+                                className="text-black hover:text-purple-gradient-1 dark:text-theme-font-secondary dark:hover:text-purple-gradient-1"
+                            />
                         </a>
                     </div>
                 </div>
             </div>
 
             <div className="flex flex-row w-screen h-40 bottom-0 bg-slate-50 items-center justify-between px-8 md:px-20 dark:bg-theme-dark-bg">
-                <PersonalLogo fill={isDarkModeEnabled ? '#f8fafc' : '#181818'} width={'55'} height={'35'} />
+                <PersonalLogo fill={isDarkModeEnabled ? '#f8fafc' : '#181818'} width={'50'} height={'35'} />
 
                 <span className="flex flex-col items-start dark:text-theme-font-secondary">
-                    <p className="font-light">@ Carmine Fabbri 2023</p>
-                    <p className="font-light">Developed with ❤️ and React</p>
+                    <p className="font-light text-xs md:text-sm text-light-gray">@ Carmine Fabbri</p>
+                    <p className="font-light text-xs md:text-sm text-light-gray">Developed React and ❤️</p>
                 </span>
             </div>
         </footer>
