@@ -13,10 +13,12 @@ const App: React.FC = () => {
     return (
         <div className={darkModeSelected ? 'dark' : ''}>
             <Header />
-            <MainHero />
-            <Education />
-            <Experience />
-            <Footer />
+            <div className="lg:px-40 md:px-8 bg-slate-50 dark:bg-theme-dark-bg">
+                <MainHero />
+                <Education />
+                <Experience />
+                <Footer />
+            </div>
         </div>
     );
 };
