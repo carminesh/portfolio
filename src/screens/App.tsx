@@ -6,6 +6,7 @@ import Header from '../layouts/Header';
 import MainHero from '../layouts/MainHero';
 import { getSelectedTheme } from '../store/slices/ThemeSlice';
 import { useEffect } from 'react';
+import { useState } from 'react';
 
 const App: React.FC = () => {
     const darkModeSelected: boolean = useSelector(getSelectedTheme);
@@ -13,7 +14,7 @@ const App: React.FC = () => {
     return (
         <div className={darkModeSelected ? 'dark' : ''}>
             <Header />
-            <div className="lg:px-40 md:px-8 bg-slate-50 dark:bg-theme-dark-bg">
+            <div className="2xl:px-72 lg:px-44  md:px-8 bg-slate-50 dark:bg-theme-dark-bg">
                 <MainHero />
                 <Education />
                 <Experience />
