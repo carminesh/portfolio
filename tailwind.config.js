@@ -12,6 +12,7 @@ module.exports = {
         'light-purple': '#E7DBFF',
         'light-yellow': '#FFF88F',
         'light-gray': '#585858',
+        'light-green': '#a2ff8e',
         'gray-back': '#DDDDDD',
         /* dark theme section */ 
         'theme-dark-bg': '#181818',
