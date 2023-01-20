@@ -7,6 +7,7 @@ import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/animation.css';
 import useInfo from '../hooks/useInfo';
+import { motion } from 'framer-motion';
 
 const MainHero: React.FC = () => {
     const contactAction = useCallback(() => {
@@ -16,7 +17,17 @@ const MainHero: React.FC = () => {
     const { sendEmail } = useInfo('fabbricarmine@gmail.com');
 
     return (
-        <div className="bg-slate-50 w-auto h-auto flex-row items-center pl-6 pr-10 pt-10 md:flex md:pb-40  dark:bg-theme-dark-bg bg">
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0, scale: 0.9 },
+            }}
+            className="bg-slate-50 w-auto h-auto flex-row items-center pl-6 pr-10 pt-12 md:flex md:pb-40  dark:bg-theme-dark-bg bg"
+        >
             <section className="flex-1 h-auto flex-col ">
                 <h2 className="text-4xl sm:text-5xl font-normal text-black mb-2 dark:text-theme-font-secondary">Hi There,</h2>
                 <h1 className="text-5xl sm:text-7xl font-medium mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-gradient-1 to-purple-gradient-2">I'm Carmine</h1>
@@ -51,7 +62,7 @@ const MainHero: React.FC = () => {
             </section>
 
             <img className="computerIcon" src={require('../assets/computerIconImg.png')} alt="computer icon" />
-        </div>
+        </motion.div>
     );
 };
 

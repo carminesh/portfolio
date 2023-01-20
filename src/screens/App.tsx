@@ -5,8 +5,6 @@ import Footer from '../layouts/Footer';
 import Header from '../layouts/Header';
 import MainHero from '../layouts/MainHero';
 import { getSelectedTheme } from '../store/slices/ThemeSlice';
-import { useEffect } from 'react';
-import { useState } from 'react';
 
 const App: React.FC = () => {
     const darkModeSelected: boolean = useSelector(getSelectedTheme);

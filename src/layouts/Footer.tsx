@@ -7,6 +7,7 @@ import PersonalLogo from '../assets/PersonalLogo';
 import { useSelector } from 'react-redux';
 import { getSelectedTheme } from '../store/slices/ThemeSlice';
 import useInfo from '../hooks/useInfo';
+import { motion } from 'framer-motion';
 
 const Footer: React.FC = () => {
     const isDarkModeEnabled: boolean = useSelector(getSelectedTheme);
@@ -14,7 +15,17 @@ const Footer: React.FC = () => {
     const { sendEmail } = useInfo('fabbricarmine@gmail.com');
 
     return (
-        <footer className="flex flex-col items-center justify-between h-auto pt-10 w-auto bg-slate-50 dark:bg-theme-dark-bg">
+        <motion.footer
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0, scale: 0.9 },
+            }}
+            className="flex flex-col items-center justify-between h-auto pt-10 w-auto bg-slate-50 dark:bg-theme-dark-bg"
+        >
             <div className="flex flex-col justify-between w-5/6 h-5/6 mb-20 rounded-md bg-gray-back py-6 px-10 lg:flex-row lg:items-center lg:h-56 dark:bg-theme-dark-bg-secondary">
                 <span>
                     <h1 className="text-black font-medium text-3xl dark:text-theme-font-secondary">Are you keen to know more?</h1>
@@ -54,7 +65,7 @@ const Footer: React.FC = () => {
                     <p className="font-light text-xs md:text-sm text-light-gray">Developed with React and ❤️</p>
                 </span>
             </div>
-        </footer>
+        </motion.footer>
     );
 };
 
