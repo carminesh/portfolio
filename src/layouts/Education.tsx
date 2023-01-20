@@ -1,17 +1,16 @@
 import React, { useMemo, useState } from 'react';
-import LineConnector from '../components/LineConnector';
 import ShowcaseItem from '../components/ShowcaseItem';
 import { ExplainingModel } from '../models/ExplainingModel';
 
 const Education: React.FC = () => {
     const [educationData, setEducationData] = useState<ExplainingModel[]>([
         {
-            date: '2019.09 - 2022.09 (3 years)',
+            date: 'September 2019 - September 2022 (3 years)',
             title: 'University of Salerno',
             description: 'Bachelor’s Degree in Computer Science',
         },
         {
-            date: '2018.09 - 2019.07',
+            date: 'September 2018 - July 2019',
             title: 'Apple Developer Academy',
             description:
                 "The Apple Developer Academy is a partnership between the University of Naples Federico II and Apple.\nTraining at the Academy is aimed at app development for the world's most innovative and vibrant app ecosystem.\nThe program focuses on software development, startup creation and app design, with an emphasis on creativity and collaboration.",
