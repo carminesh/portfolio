@@ -1,19 +1,18 @@
 import React from 'react';
-import '../styles/ActionButton.css';
 
 interface ActionButtonProps {
+    icon: string;
     text: string;
-    logo: string;
-    backgroundColor: string;
-    color: string;
-    onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
+    buttonStyle?: React.CSSProperties;
+    textColor: string;
+    onClick: () => void;
 }
 
-const ActionButton: React.FC<ActionButtonProps> = ({ text, logo, backgroundColor, color, onClick }) => {
+const ActionButton: React.FC<ActionButtonProps> = ({ icon, text, buttonStyle, textColor, onClick }) => {
     return (
-        <button id="Button" style={{ backgroundColor: backgroundColor }} onClick={onClick}>
-            <img id="Logo" src={logo} alt="logo" />
-            <span id="Button-text" style={{ color: color }}>
+        <button style={buttonStyle} onClick={onClick} className="w-200px h-50px py-3 px-6 flex flex-row items-center rounded hover:brightness-125 cursor-pointer">
+            <img src={icon} alt={'button icon'} className="icon" />
+            <span style={{ color: textColor }} className="ml-3">
                 {text}
             </span>
         </button>

@@ -1,14 +1,20 @@
 import React from 'react';
-import logo from '../assets/logo.svg';
-import darkThemeIcon from '../assets/darkThemeIcon.svg';
-import '../styles/Header.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { switchTheme, getSelectedTheme } from '../store/slices/ThemeSlice';
+import PersonalLogo from '../assets/PersonalLogo';
+import ThemeIcon from '../assets/ThemeIcon';
 
 const Header: React.FC = () => {
+    const dispatch = useDispatch();
+    const isDarkModeEnabled: boolean = useSelector(getSelectedTheme);
+
     return (
-        <div className="Header-container">
-            <img className="Personal-logo" src={logo} alt="personal logo" />
-            <img className="Dark-theme-icon" src={darkThemeIcon} alt="dark theme icon" />
-        </div>
+        <nav className="flex flex-row justify-between items-center bg-slate-50 h-24 py-3 px-8 w-screen dark:bg-theme-dark-bg lg:px-20">
+            <PersonalLogo fill={isDarkModeEnabled ? '#f8fafc' : '#181818'} width={'55'} height={'35'} />
+            <button onClick={() => dispatch(switchTheme(!isDarkModeEnabled))}>
+                <ThemeIcon fill={isDarkModeEnabled ? '#f8fafc' : '#181818'} width={'28'} height={'28'} />
+            </button>
+        </nav>
     );
 };
 
