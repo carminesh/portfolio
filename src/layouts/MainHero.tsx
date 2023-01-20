@@ -32,7 +32,7 @@ const MainHero: React.FC = () => {
                 <h2 className="text-4xl sm:text-5xl font-normal text-black mb-2 dark:text-theme-font-secondary">Hi There,</h2>
                 <h1 className="text-5xl sm:text-7xl font-medium mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-gradient-1 to-purple-gradient-2">I'm Carmine</h1>
                 <p className="text-l sm:text-xl font-normal text-light-gray phone:text-base dark:text-theme-font-secondary">
-                    A computer science graduate based in Italy passionate about software development and highly enthusiastic about it. <br></br>I am always willing to learn new things.
+                    A computer science graduate living in Italy who is passionate about software development and UI/UX experience. <br></br>I am always willing to learn new things.
                 </p>
 
                 <div className="mt-5 flex flex-row justify-between w-[328px]">
