@@ -8,7 +8,21 @@ import { ExplainingModel } from '../models/ExplainingModel';
 const Experience: React.FC = () => {
     const [experienceData, setExperienceData] = useState<ExplainingModel[]>([
         {
-            date: 'September 2022 - Present',
+            date: 'May 2023 - Present',
+            title: 'Tim S.p.A',
+            subtitle: 'Software Engineer - Full Time',
+            description:
+                'As an IT consultant, I have had the opportunity to work on various static websites and/or web applications using modern architectures such as Jamstack and frameworks such as React, Next.js and Hugo.',
+        },
+        {
+            date: 'March 2023 - May 2023',
+            title: 'Xister Reply',
+            subtitle: 'IT Consultant - Full Time',
+            description:
+                'As an IT consultant, I have had the opportunity to work on various static websites and/or web applications using modern architectures such as Jamstack and frameworks such as React, Next.js and Hugo.',
+        },
+        {
+            date: 'September 2022 - March 2023',
             title: 'Alfonsino S.p.A',
             subtitle: 'Mobile Engineer - Full Time',
             description:

@@ -1,8 +1,8 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import ActionButton from '../components/ActionButton';
 import mailIcon from '../assets/mailIcon.svg';
 import downloadIcon from '../assets/downloadIcon.svg';
-import computerIcon from '../assets/computerIcon.svg';
+import myResume from '../documents/ResumeCarmineFabbriWEB.pdf';
 import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/animation.css';
@@ -10,10 +10,6 @@ import useInfo from '../hooks/useInfo';
 import { motion } from 'framer-motion';
 
 const MainHero: React.FC = () => {
-    const contactAction = useCallback(() => {
-        console.log('CONTACT');
-    }, []);
-
     const { sendEmail } = useInfo('fabbricarmine@gmail.com');
 
     return (
@@ -43,7 +39,9 @@ const MainHero: React.FC = () => {
                         textColor={'white'}
                         onClick={() => sendEmail()}
                     />
-                    <ActionButton icon={downloadIcon} text={'Resume'} buttonStyle={{ backgroundColor: '#DDDDDD' }} textColor={'#1B1B1B'} onClick={() => contactAction} />
+                    <a target="_blank" href={myResume} rel="noreferrer">
+                        <ActionButton icon={downloadIcon} text={'Resume'} buttonStyle={{ backgroundColor: '#DDDDDD' }} textColor={'#1B1B1B'} onClick={() => {}} />
+                    </a>
                 </div>
 
                 <div className="flex flex-rowitems-center mt-5">
