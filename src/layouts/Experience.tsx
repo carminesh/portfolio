@@ -6,13 +6,12 @@ import StoryLine from '../components/StoryLine';
 import { ExplainingModel } from '../models/ExplainingModel';
 
 const Experience: React.FC = () => {
-    const [experienceData, setExperienceData] = useState<ExplainingModel[]>([
+    const experienceData: ExplainingModel[] = [
         {
             date: 'May 2023 - Present',
             title: 'Tim S.p.A',
             subtitle: 'Software Engineer - Full Time',
-            description:
-                'As an IT consultant, I have had the opportunity to work on various static websites and/or web applications using modern architectures such as Jamstack and frameworks such as React, Next.js and Hugo.',
+            description: '',
         },
         {
             date: 'March 2023 - May 2023',
@@ -35,7 +34,7 @@ const Experience: React.FC = () => {
             description:
                 'During my internship, I developed a mobile cross-platform app from scratch using React Native and React Native Web to manage the workflow of the customer service team.\nI was responsible for designing and implementing features, debugging and fixing issues, and testing the app to ensure it met the requirements and functioned correctly.\nI also worked closely with the customer service team to understand their workflow and design the app to meet their needs.\nThis experience provided me with valuable hands-on learning and the opportunity to apply my skills in a real-world setting.',
         },
-    ]);
+    ];
 
     const renderExperienceItems = useMemo(() => {
         return experienceData.map((item: ExplainingModel, index: number) => {

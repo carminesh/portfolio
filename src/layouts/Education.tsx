@@ -4,7 +4,7 @@ import ShowcaseItem from '../components/ShowcaseItem';
 import { ExplainingModel } from '../models/ExplainingModel';
 
 const Education: React.FC = () => {
-    const [educationData, setEducationData] = useState<ExplainingModel[]>([
+    const educationData: ExplainingModel[] = [
         {
             date: 'September 2019 - September 2022 (3 years)',
             title: 'University of Salerno',
@@ -16,7 +16,7 @@ const Education: React.FC = () => {
             description:
                 "The Apple Developer Academy is a partnership between the University of Naples Federico II and Apple.\nTraining at the Academy is aimed at app development for the world's most innovative and vibrant app ecosystem.\nThe program focuses on software development, startup creation and app design, with an emphasis on creativity and collaboration.",
         },
-    ]);
+    ];
 
     const renderEducationItems = useMemo(() => {
         return educationData.map((item: ExplainingModel) => {
