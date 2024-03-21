@@ -11,28 +11,40 @@ const Experience: React.FC = () => {
             date: 'May 2023 - Present',
             title: 'Tim S.p.A',
             subtitle: 'Software Engineer - Full Time',
-            description: '',
+            description: `
+            • Designed and deployed a FinOps pipeline with Ansible for 120+ machines, yielding substantial cost reductions, resulting in an over 55% reduction in infrastructure costs on Google Cloud Platform.
+            • Developed and administered the DevOps toolchain, integrating CI/CD phases with Jenkins, GitLab, SonarQube, Nexus, and Ansible/AWX.
+            • Engineered and developed different web applications with ReactJS`,
         },
         {
             date: 'March 2023 - May 2023',
             title: 'Xister Reply',
             subtitle: 'IT Consultant - Full Time',
-            description:
-                'As an IT consultant, I have had the opportunity to work on various static websites and/or web applications using modern architectures such as Jamstack and frameworks such as React, Next.js and Hugo.',
+            description: `Experienced IT consultant proficient in developing static websites and web applications using modern architectures
+                like Jamstack, resulting in a 30% increase in site performance.
+                • Engineered dynamic and responsive solutions by leveraging React and Next.js frameworks; resulting in a 25% increase
+                in user engagement and a 15% decrease in loading rate.`,
         },
         {
             date: 'September 2022 - March 2023',
             title: 'Alfonsino S.p.A',
             subtitle: 'Mobile Engineer - Full Time',
-            description:
-                'At my current work, I develop and maintain through the Agile methodologies the company three main application by using technologies like React Native, Redux and Typescript.\n I am dedicated to finding efficient solutions to problems, following design principles like SOLID to create scalable, maintainable, and easy-to-understand code and staying up to date with the latest technologies and best practices.',
+            description: `Developed three core company mobile apps for 490,000+ users across 11 regions using React Native and React
+                Native Web.
+                • Enhanced map performance by optimizing react-native-maps library implementation.
+                • Rebuilt key features for improved performance, adhering to SOLID design principles.
+                • Led Stripe SDK integration for mobile app payments.
+                • Integrated app modules natively with Swift and Java`,
         },
         {
             date: 'March 2022 - June 2022',
             title: 'Alfonsino S.p.A',
             subtitle: 'Mobile Engineer - Internship',
-            description:
-                'During my internship, I developed a mobile cross-platform app from scratch using React Native and React Native Web to manage the workflow of the customer service team.\nI was responsible for designing and implementing features, debugging and fixing issues, and testing the app to ensure it met the requirements and functioned correctly.\nI also worked closely with the customer service team to understand their workflow and design the app to meet their needs.\nThis experience provided me with valuable hands-on learning and the opportunity to apply my skills in a real-world setting.',
+            description: `Created a hybrid mobile platform to streamline workflow management for the customer service team.
+                • Engineered front-end login functionality with RESTful service calls, secure credential storage, and JWT token
+                authentication.
+                • Improved performance by minimizing unnecessary component rendering through adherence to React Native best
+                practices, resulting in a 25% decrease in unnecessary component rendering.`,
         },
     ];
 
