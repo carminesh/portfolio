@@ -2,7 +2,7 @@ import React from 'react';
 import ActionButton from '../components/ActionButton';
 import mailIcon from '../assets/mailIcon.svg';
 import downloadIcon from '../assets/downloadIcon.svg';
-import myResume from '../documents/ResumeCarmineFabbriWEB.pdf';
+import myResume from '../documents/Carmine_Fabbri_Resume_Web.pdf';
 import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/animation.css';

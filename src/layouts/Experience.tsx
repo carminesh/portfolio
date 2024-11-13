@@ -9,7 +9,7 @@ const Experience: React.FC = () => {
     const experienceData: ExplainingModel[] = [
         {
             date: 'May 2023 - Present',
-            title: 'Tim S.p.A',
+            title: 'FiberCop S.p.A (Formerly Tim S.p.A)',
             subtitle: 'Software Engineer - Full Time',
             description: `
             • Designed and deployed a FinOps pipeline with Ansible for 120+ machines, yielding substantial cost reductions, resulting in an over 55% reduction in infrastructure costs on Google Cloud Platform.
