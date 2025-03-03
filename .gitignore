@@ -23,7 +23,6 @@ env.json
 
 # Xcode
 #
-build/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -43,7 +42,6 @@ project.xcworkspace
 
 # Android/IntelliJ
 #
-build/
 .idea
 .gradle
 local.properties
@@ -74,3 +72,6 @@ buck-out/
 # Bundle artifacts
 *.jsbundle
 
+.firebaserc
+.firebase.json
+.firebase

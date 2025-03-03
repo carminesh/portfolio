@@ -3,7 +3,7 @@
 Steps to follow:
 
 -   firebase logout
--   firebase login
+-   firebase login (email: fabbricarmine@gmail.com)
 -   yarn build
 -   firebase deploy
 -   open the new url preview and pres cmd + shift + r to farce cache cleaning
