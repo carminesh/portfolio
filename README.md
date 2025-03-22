@@ -1,11 +1,9 @@
 # Publishing the app via Firebase
 
-Steps to follow:
+Steps to follow for deploying the app on github pages:
 
--   firebase logout
--   firebase login (email: fabbricarmine@gmail.com)
--   yarn build
--   firebase deploy
--   open the new url preview and pres cmd + shift + r to farce cache cleaning
+1. Make the modification over master branch and push it on the master branch
+2. Then from the master branch, run the following commands: - npm run deploy
+   and everything should be done.
 
-NOTE: The first 2 steps are needed only if it has been a long time since the last app deployment beacause the firebase cli can throw an error
+For more info, link is here: https://github.com/gitname/react-gh-pages
