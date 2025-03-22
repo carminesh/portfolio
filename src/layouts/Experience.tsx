@@ -20,10 +20,8 @@ const Experience: React.FC = () => {
             date: 'March 2023 - May 2023',
             title: 'Xister Reply',
             subtitle: 'IT Consultant - Full Time',
-            description: `Experienced IT consultant proficient in developing static websites and web applications using modern architectures
-                like Jamstack, resulting in a 30% increase in site performance.
-                • Engineered dynamic and responsive solutions by leveraging React and Next.js frameworks; resulting in a 25% increase
-                in user engagement and a 15% decrease in loading rate.`,
+            description: `Collaborated with cross-functional teams to develop and implement IT solutions that met business needs, resulting in improved communication and increased stakeholder satisfaction.
+                • Engineered dynamic and responsive solutions by leveraging the React framework and micro frontend architecture to enhance modularity, scalability, and maintainability of web applications.`,
         },
         {
             date: 'September 2022 - March 2023',

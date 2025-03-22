@@ -11,7 +11,7 @@ const Education: React.FC = () => {
             description: 'Masters’s Degree in Computer Science',
         },
         {
-            date: 'September 2019 - September 2022 (3 years)',
+            date: 'September 2019 - September 2022',
             title: 'University of Salerno',
             description: 'Bachelor’s Degree in Computer Science',
         },
