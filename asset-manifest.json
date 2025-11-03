@@ -1,17 +1,15 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f035a2c2.css",
-    "main.js": "/portfolio/static/js/main.03ee662e.js",
+    "main.js": "/portfolio/static/js/main.8231c35e.js",
     "static/media/computerIconImg.png": "/portfolio/static/media/computerIconImg.8e4a54ed375be48ef4a8.png",
-    "static/media/Carmine_Fabbri_Resume_Web.pdf": "/portfolio/static/media/Carmine_Fabbri_Resume_Web.1c9b63eb5800b83aeb34.pdf",
-    "static/media/downloadIcon.svg": "/portfolio/static/media/downloadIcon.5d06124c86bbf2ed2760e16c2631fee4.svg",
     "index.html": "/portfolio/index.html",
     "static/media/mailIcon.svg": "/portfolio/static/media/mailIcon.5f0949a630adbdf04d5aed8007408fef.svg",
     "main.f035a2c2.css.map": "/portfolio/static/css/main.f035a2c2.css.map",
-    "main.03ee662e.js.map": "/portfolio/static/js/main.03ee662e.js.map"
+    "main.8231c35e.js.map": "/portfolio/static/js/main.8231c35e.js.map"
   },
   "entrypoints": [
     "static/css/main.f035a2c2.css",
-    "static/js/main.03ee662e.js"
+    "static/js/main.8231c35e.js"
   ]
 }
