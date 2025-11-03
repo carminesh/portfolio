@@ -8,41 +8,41 @@ import { ExplainingModel } from '../models/ExplainingModel';
 const Experience: React.FC = () => {
     const experienceData: ExplainingModel[] = [
         {
-            date: 'May 2023 - Present',
-            title: 'FiberCop S.p.A (Formerly Tim S.p.A)',
+            date: 'July 2025 - Nov 2025',
+            title: '3Bee',
+            subtitle: 'Front-End Engineer - Full Time',
+            description: `
+            • Develop and maintain reusable UI components in React and TypeScript, ensuring scalability, accessibility, and visual consistency across products
+            • Build performant and SEO-friendly applications with Next.js, integrating React Query for efficient data fetching and state management 
+            • Collaborate with designers to define and implement Design Tokens and shared UI foundations, aligning code and design systems
+            • Use Tailwind CSS to create maintainable, responsive, and design-consistent interfaces
+            • Apply the Composition Pattern to design and extend the company’s internal UI library, promoting modularity and reusability
+            • Maintain documentation and guide teams in using shared UI components via Storybook`,
+        },
+        {
+            date: 'May 2023 - July 2025',
+            title: 'Tim S.p.A',
             subtitle: 'Software Engineer - Full Time',
             description: `
-            • Designed and deployed a FinOps pipeline with Ansible for 120+ machines, yielding substantial cost reductions, resulting in an over 55% reduction in infrastructure costs on Google Cloud Platform.
-            • Developed and administered the DevOps toolchain, integrating CI/CD phases with Jenkins, GitLab, SonarQube, Nexus, and Ansible/AWX.
-            • Engineered and developed different web applications with ReactJS`,
+            • Designed and implemented a comprehensive DevOps toolchain, integrating CI/CD phases with Jenkins, SonarQube, and Ansible/AWX to streamline software development, testing, and deployment processes
+            • Developed a FinOps pipeline using Ansible to automate infrastructure provisioning and management across 120+ machines deployed on Google Cloud, resulting in a 55% reduction in infrastructure costs 
+            • Streamlined code deployment by designing and implementing automated CI/CD pipelines using Jenkins, reducing manual effort by 70% and increasing work productivity. 
+            • Engineered web applications through React, implementing best practices to ensure high-performance and user-centric solutions, and scalable UI component library
+            • Collaborated with design teams to convert UI/UX designs into responsive web interfaces using React, ensuring a seamless user experience across various devices and screen sizes
+            • Integrated ESRI JS SDK with React to develop interactive, geospatial web applications, enabling advanced mapping and spatial analysis capabilities for end-users.`,
         },
         {
-            date: 'March 2023 - May 2023',
-            title: 'Xister Reply',
-            subtitle: 'IT Consultant - Full Time',
-            description: `Collaborated with cross-functional teams to develop and implement IT solutions that met business needs, resulting in improved communication and increased stakeholder satisfaction.
-                • Engineered dynamic and responsive solutions by leveraging the React framework and micro frontend architecture to enhance modularity, scalability, and maintainability of web applications.`,
-        },
-        {
-            date: 'September 2022 - March 2023',
+            date: 'March 2022 - March 2023',
             title: 'Alfonsino S.p.A',
-            subtitle: 'Mobile Engineer - Full Time',
-            description: `Developed three core company mobile apps for 490,000+ users across 11 regions using React Native and React
-                Native Web.
-                • Enhanced map performance by optimizing react-native-maps library implementation.
-                • Rebuilt key features for improved performance, adhering to SOLID design principles.
-                • Led Stripe SDK integration for mobile app payments.
-                • Integrated app modules natively with Swift and Java`,
-        },
-        {
-            date: 'March 2022 - June 2022',
-            title: 'Alfonsino S.p.A',
-            subtitle: 'Mobile Engineer - Internship',
-            description: `Created a hybrid mobile platform to streamline workflow management for the customer service team.
-                • Engineered front-end login functionality with RESTful service calls, secure credential storage, and JWT token
-                authentication.
-                • Improved performance by minimizing unnecessary component rendering through adherence to React Native best
-                practices, resulting in a 25% decrease in unnecessary component rendering.`,
+            subtitle: 'Front-End Engineer - Full Time',
+            description: `
+            • Collaborated on the development of the three main company mobile applications that serve the needs of over 490,000 users across 11 regions of Italy through the use of tecnlogies such as React Native and React Native Web
+            • Built some of the most important app features by using libraries like React Navigation, Reanimated and Redux Toolkit 
+            • Increase performance of the maps by optimizing the in app implementation of the react-native-maps library
+            • Rebuild from  scratch major feature components to improve performance and clean up code by following design principles like SOLID
+            • Used Git for version control of the source code along with the maintenance of the builds 
+            • Experienced in MVVM (within iOS) and other design patterns, supporting modularity and effective software refactoring
+            • Used Git for version control of the source code along with the maintenance of the builds `,
         },
     ];
 

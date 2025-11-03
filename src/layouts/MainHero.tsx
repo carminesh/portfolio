@@ -34,14 +34,14 @@ const MainHero: React.FC = () => {
                 <div className="mt-5 flex flex-row justify-between w-[328px]">
                     <ActionButton
                         icon={mailIcon}
-                        text={'Contact Me'}
+                        text={'fabbricarmine@gmail.com'}
                         buttonStyle={{ background: 'linear-gradient(to right, var(--gradient-start, #B38EFF), var(--gradient-end, #858CFF))' }}
                         textColor={'white'}
                         onClick={() => sendEmail()}
                     />
-                    <a target="_blank" href={myResume} rel="noreferrer">
+                    {/*  <a target="_blank" href={myResume} rel="noreferrer">
                         <ActionButton icon={downloadIcon} text={'Resume'} buttonStyle={{ backgroundColor: '#DDDDDD' }} textColor={'#1B1B1B'} onClick={() => {}} />
-                    </a>
+                    </a> */}
                 </div>
 
                 <div className="flex flex-rowitems-center mt-5">

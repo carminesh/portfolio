@@ -6,14 +6,16 @@ import { ExplainingModel } from '../models/ExplainingModel';
 const Education: React.FC = () => {
     const educationData: ExplainingModel[] = [
         {
-            date: 'October 2023 - Present',
+            date: 'October 2023 - October 2025',
             title: 'Sapienza University of Rome',
-            description: 'Masters’s Degree in Computer Science',
+            subtitle: 'Master’s Degree in Computer Science',
+            description: `Score: 110/110 with Honors`,
         },
         {
             date: 'September 2019 - September 2022',
             title: 'University of Salerno',
-            description: 'Bachelor’s Degree in Computer Science',
+            subtitle: 'Bachelor’s Degree in Computer Science',
+            description: 'Score: 103/110',
         },
         {
             date: 'September 2018 - July 2019',
