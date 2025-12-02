@@ -5,6 +5,7 @@ import Footer from '../layouts/Footer';
 import Header from '../layouts/Header';
 import MainHero from '../layouts/MainHero';
 import { getSelectedTheme } from '../store/slices/ThemeSlice';
+import EducationCard from '../layouts/Education';
 
 const App: React.FC = () => {
     const darkModeSelected: boolean = useSelector(getSelectedTheme);
