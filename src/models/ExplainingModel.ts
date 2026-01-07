@@ -3,5 +3,7 @@ export interface ExplainingModel {
     date: string;
     title: string;
     subtitle?: string;
-    description: string
+    description?: string
+    detail?: string
+    skills?: string[];
 } 
