@@ -18,7 +18,7 @@ const educationData: ExplainingModel[] = [
         date: 'Sep. 2018 - July 2019',
         title: 'Apple Developer Academy',
         subtitle: 'Apple Developer Training Program',
-        description: 'The Apple Developer Academy is a partnership between the University of Naples Federico II and Apple.',
+        description: 'University of Naples Federico II and Apple',
     },
 ];
 
