@@ -27,7 +27,7 @@ export default function Education() {
         <div className="mb-20 px-4">
             <h1 className="text-[40px] font-medium mb-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-gradient-1 to-purple-gradient-2">Experience</h1>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 justify-items-center mx-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-5 justify-items-center mx-5">
                 {educationData.map((item, index) => (
                     <ExplainingCard
                         key={item.title}
