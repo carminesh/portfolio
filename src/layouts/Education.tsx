@@ -28,7 +28,7 @@ export default function Education() {
             <h1 className="text-[40px] font-medium mb-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-gradient-1 to-purple-gradient-2">Experience</h1>
 
             <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-5 justify-items-center mx-5">
-                {educationData.map((item, index) => (
+                {educationData.map((item) => (
                     <ExplainingCard
                         key={item.title}
                         education={item}
@@ -43,7 +43,12 @@ export default function Education() {
                     >
                         {/* Icon */}
                         <div className="bg-zinc-900/30 dark:bg-zinc-700 p-4 rounded-xl flex-shrink-0">
-                            <ExplainingCard.Icon icon="mdi:school-outline" width={36} height={36} color="#B08DFF" />
+                            <ExplainingCard.Icon
+                                icon={item.title === 'Apple Developer Academy' ? 'material-symbols:computer-outline' : 'mdi:school-outline'}
+                                width={item.title === 'Apple Developer Academy' ? 34 : 36}
+                                height={item.title === 'Apple Developer Academy' ? 34 : 36}
+                                color="#B08DFF"
+                            />
                         </div>
 
                         {/* Contenuto */}
